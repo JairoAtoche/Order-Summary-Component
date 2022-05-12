@@ -32,7 +32,7 @@ MOBILE
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JairoAtoche/Order-Summary-Component)
-- Live Site URL: [GitHub Pages]()
+- Live Site URL: [GitHub Pages](https://jairoatoche.github.io/Order-Summary-Component/)
 
 ## My process
 
