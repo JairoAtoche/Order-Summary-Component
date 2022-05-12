@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary color */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral color */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(224, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    /* Active state color */
+    --active-pale-blue: #766CF1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    background-size: contain;
+    margin: auto 1.7rem;
+}
+
+.main {
+    max-width: 28rem;
+    height: 40rem; /* 40rem */
+    background-color: white;
+
+    border-radius: 5%;
+    overflow: hidden;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main__img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.main__h1 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.main__p {
+    margin: 1rem 3rem 1.5rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.main__pricing {
+    height: 5rem;
+    width: 80%;
+    background-color: var(--very-pale-blue);
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing__container {
+    align-self: center;
+    margin: auto 1rem;
+}
+
+.pricing__h2 {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+    line-height: 1.5rem;
+    flex-grow: 2;
+}
+
+.pricing__p {
+    font-size: 0.875rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    flex-grow: 2;
+}
+.pricing__change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-align: center;
+    flex-grow: 1;
+
+}
+.pricing__change:hover {
+    color: var(--active-pale-blue);
+    text-decoration: none;
+}
+
+.main__payment {
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    width: 80%;
+    align-self: center;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition-duration: 1s;
+    box-shadow: 1px 9px 20px 0px rgba(56,41,224,0.48);
+}
+
+.main__payment:hover {
+    background-color: #766CF1;
+    transition-duration: 1s;
+}
+.main__cancel {
+    text-decoration: none;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+.main__cancel:hover {
+    color: var(--dark-blue);
+}
+.footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--dark-blue);
+}
+
+.footer__a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        height: 37rem;
+    }
+
+    .footer {
+        margin: 0.2rem;
+    }
+}

@@ -2,36 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="index.css" type="text/css">
 </head>
-<body>
+<body class="body">
 
-  Order Summary
+  <header class="header">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  </header>
+  <main class="main">
+    <div class="main__container-img">
+      <img class="main__img" src="images/illustration-hero.svg" alt="hero-logo">
+    </div>
 
-  Annual Plan
-  $59.99/year
+    <h1 class="main__h1">Order Summary</h1>
+    <p class="main__p">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </p>
+    <div class="main__pricing pricing">
+      <div class="pricing__container">
+          <img class="pricing__img" src="images/icon-music.svg" alt="icon music">
+      </div>
+      <h2 class="pricing__h2">
+        Annual Plan
+        <p class="pricing__p">
+          $59.99/year
+        </p>
+      </h2>
+      <a class="pricing__change" href="">
+        Change
+      </a>
+    </div>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <input type="submit" class="main__payment" value="Proceed to Payment">      
+    </input>
+    <a class="main__cancel" href="#">
+      Cancel Order
+    </a>
+  </main>
+  <footer class="footer">
+    <div class="footer__attribution">
+      Challenge by <a class="footer__a" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="footer__a" href="https://github.com/JairoAtoche" target="_blank">Jairo Atoche</a>.
+    </div>
+  </footer>
 </body>
 </html>
